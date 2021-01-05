@@ -1,10 +1,10 @@
 <?php
 
-namespace Mirovit\NovaNotifications;
+namespace Bhdit\NovaNotifications;
 
 use Carbon\Carbon;
 use Illuminate\Contracts\Support\Arrayable;
-use Mirovit\NovaNotifications\Contracts\Notification as NotificationContract;
+use Bhdit\NovaNotifications\Contracts\Notification as NotificationContract;
 
 class Notification implements NotificationContract, Arrayable
 {

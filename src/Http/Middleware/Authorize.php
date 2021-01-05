@@ -1,9 +1,9 @@
 <?php
 
-namespace Mirovit\NovaNotifications\Http\Middleware;
+namespace Bhdit\NovaNotifications\Http\Middleware;
 
 use Laravel\Nova\Nova;
-use Mirovit\NovaNotifications\NovaNotifications;
+use Bhdit\NovaNotifications\NovaNotifications;
 
 class Authorize
 {

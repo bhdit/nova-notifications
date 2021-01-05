@@ -1,5 +1,5 @@
 {
-    "name": "mirovit/nova-notifications",
+    "name": "bhdit/nova-notifications",
     "description": "A Laravel Nova tool to display user notifications.",
     "keywords": [
         "laravel",
@@ -16,13 +16,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Mirovit\\NovaNotifications\\": "src/"
+            "Bhdit\\NovaNotifications\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Mirovit\\NovaNotifications\\NovaNotificationsServiceProvider"
+                "Bhdit\\NovaNotifications\\NovaNotificationsServiceProvider"
             ]
         }
     },

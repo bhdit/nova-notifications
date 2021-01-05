@@ -1,12 +1,12 @@
 <?php
 
-namespace Mirovit\NovaNotifications;
+namespace Bhdit\NovaNotifications;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;
 use Laravel\Nova\Nova;
-use Mirovit\NovaNotifications\Http\Middleware\Authorize;
+use Bhdit\NovaNotifications\Http\Middleware\Authorize;
 
 class NovaNotificationsServiceProvider extends ServiceProvider
 {

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Mirovit\NovaNotifications\Contracts;
+namespace Bhdit\NovaNotifications\Contracts;
 
 
 interface Notification

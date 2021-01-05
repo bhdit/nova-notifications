@@ -1,6 +1,6 @@
 <?php
 
-use Mirovit\NovaNotifications\Notification;
+use Bhdit\NovaNotifications\Notification;
 use PHPUnit\Framework\TestCase;
 
 class NotificationTest extends TestCase

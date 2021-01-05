@@ -1,6 +1,6 @@
 <?php
 
-namespace Mirovit\NovaNotifications;
+namespace Bhdit\NovaNotifications;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Tool;

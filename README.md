@@ -31,7 +31,7 @@ Laravel will auto-register the Service Provider. You'll need to register the too
     {
         return [
             // ...
-            \Mirovit\NovaNotifications\NovaNotifications::make(),
+            \Bhdit\NovaNotifications\NovaNotifications::make(),
         ];
     }
 ```
@@ -130,7 +130,7 @@ class Created extends Notification
      */
     public function toArray($notifiable)
     {
-        return \Mirovit\NovaNotifications\Notification::make()
+        return \Bhdit\NovaNotifications\Notification::make()
             ->info('A new user was created.')
             ->subtitle('There is a new user in the system - ' . $this->user->name . '!')
             ->routeDetail('users', $this->user->id)
@@ -187,7 +187,7 @@ There is an optional config file published by the package. If you use a differen
 
 Note that the default model namespace that the package assumes is App\Models, so if you're using another namespace, this will have to be adjusted for the authentication between the API and the front end.
 
-`php artisan vendor:publish` and select the number corresponding to Mirovit\NovaNotifications\NovaNotificationsServiceProvider or publish all.
+`php artisan vendor:publish` and select the number corresponding to Bhdit\NovaNotifications\NovaNotificationsServiceProvider or publish all.
 
 ## Demo
 

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Mirovit\NovaNotifications\Http\Controllers;
+namespace Bhdit\NovaNotifications\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Response;
