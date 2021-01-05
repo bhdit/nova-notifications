@@ -144,7 +144,7 @@ class Notification implements NotificationContract, Arrayable
 
     public function action(Action $action): Notification
     {
-        $this->notification($action->toArray());
+        $this->notification['actions'][] = $action->toArray();
         return $this;
     }
 
