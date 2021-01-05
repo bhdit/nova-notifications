@@ -11,6 +11,7 @@ class UrlButton implements Action
     public function __construct(string $label, string $url)
     {
         $this->properties = compact('label', 'url');
+        $this->properties['type'] = 'url';
     }
 
     public function toArray(): array

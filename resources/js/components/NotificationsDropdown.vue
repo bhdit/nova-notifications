@@ -107,7 +107,7 @@
                     }
                 }
 
-                let actions = []
+                let actions = notification.actions;
 
                 if (notification.show_mark_as_read) {
                     actions.push(markAsRead)
