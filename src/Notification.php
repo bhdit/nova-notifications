@@ -2,6 +2,7 @@
 
 namespace Bhdit\NovaNotifications;
 
+use Bhdit\NovaNotifications\Contracts\Action;
 use Carbon\Carbon;
 use Illuminate\Contracts\Support\Arrayable;
 use Bhdit\NovaNotifications\Contracts\Notification as NotificationContract;
@@ -138,6 +139,12 @@ class Notification implements NotificationContract, Arrayable
     public function showCancel(bool $value = true): Notification
     {
         $this->notification['show_cancel'] = $value;
+        return $this;
+    }
+
+    public function action(Action $action): Notification
+    {
+        $this->notification($action->toArray());
         return $this;
     }
 
