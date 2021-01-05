@@ -13,4 +13,8 @@ class UrlButton implements Action
         $this->properties = compact('label', 'url');
     }
 
+    public function toArray(): array
+    {
+        return $this->properties;
+    }
 }
