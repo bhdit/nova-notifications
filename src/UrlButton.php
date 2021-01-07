@@ -14,6 +14,12 @@ class UrlButton implements Action
         $this->properties['type'] = 'url';
     }
 
+    public function classes(string $classes): UrlButton
+    {
+        $this->properties['classes'] = $classes;
+        return $this;
+    }
+
     public function toArray(): array
     {
         return $this->properties;
