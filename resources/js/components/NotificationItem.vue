@@ -23,8 +23,7 @@
             <button
                 v-for="action in notification.data.actions || []"
                 :key="action.label"
-                target="_blank"
-                class="text-black no-underline mr-3"
+                :class="(action.classes || '') + ' text-black no-underline mr-3'"
                 @click.stop="handleAction(action)"
                 :href="action.url"
                 v-text="action.label"
