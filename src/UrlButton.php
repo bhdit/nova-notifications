@@ -2,11 +2,8 @@
 
 namespace Bhdit\NovaNotifications;
 
-use Bhdit\NovaNotifications\Contracts\Action;
-
-class UrlButton implements Action
+class UrlButton extends BaseAction
 {
-    protected $properties = [];
 
     public function __construct(string $label, string $url)
     {
