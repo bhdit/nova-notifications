@@ -1,5 +1,5 @@
 <template>
-  <div class="block no-underline text-90 hover:bg-30 p-3" v-if="shouldHide">
+  <div class="block no-underline text-90 hover:bg-30 p-3" v-if="!shouldHide">
     <div class="flex justify-between">
       <notification-link
           @click.native="markAsRead()"
@@ -90,10 +90,10 @@ export default {
       axios.get(action.url)
           .then(() => {
             Nova.success('Action completed successfully')
-            if(action.markAsRead()) {
+            if('markAsRead' in action && action.markAsRead) {
               this.markAsRead();
             }
-            if(action.hidesNotification) {
+            if('hidesNotification' in action && action.hidesNotification) {
               this.shouldHide = true;
             }
           })
