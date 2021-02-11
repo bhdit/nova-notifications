@@ -88,8 +88,8 @@ export default {
     },
     async handleAction(action) {
       axios.get(action.url)
-          .then(() => {
-            Nova.success('Action completed successfully')
+          .then(({data}) => {
+            Nova.success(data.message || 'Action completed successfully')
             if('markAsRead' in action && action.markAsRead) {
               this.markAsRead();
             }
