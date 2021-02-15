@@ -67,7 +67,7 @@ export default {
     })
 
     Nova.$on('notification-batch-read', function (e) {
-      let notificationId = _.find(self.notifications, {batch_id: e.id})
+      let notificationId = _.findKey(self.notifications, n => n.data && n.data.batch_id === e.id)
       self.$refs['notification-' + notificationId][0].markAsRead()
     })
   },
