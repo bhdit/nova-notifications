@@ -65,6 +65,11 @@ export default {
       self.notifications[e.notification.id] = e.notification
       self.count--;
     })
+
+    Nova.$on('notification-batch-read', function (e) {
+      let notificationId = _.find(self.notifications, {batch_id: e.id})
+      self.$refs['notification-' + notificationId][0].markAsRead()
+    })
   },
   methods: {
     loadNotifications: function (callback) {
