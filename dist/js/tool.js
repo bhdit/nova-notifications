@@ -1942,7 +1942,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     });
 
     Nova.$on('notification-batch-read', function (e) {
-      var notificationId = _.findIndex(self.notifications, function (n) {
+      var notificationId = _.findKey(self.notifications, function (n) {
         return n.data && n.data.batch_id === e.id;
       });
       self.$refs['notification-' + notificationId][0].markAsRead();
